@@ -198,7 +198,7 @@ label {
   width: 15px;
   height: 10px;
   border-radius: 20%;
-  background-color: rgb(76, 163, 29);
+  background-color: rgb(106, 230, 39);
 }
 
 .bullet:hover {
@@ -221,7 +221,7 @@ border: 2px solid rgb(93, 108, 245);
 #radio4:checked ~ .bullets .bullet4:hover,
 #radio5:checked ~ .bullets .bullet5:hover,
 #radio6:checked ~ .bullets .bullet6:hover{
-border-color: rgb(245, 242, 93);
+border-color: rgb(106, 230, 39);
 }
 
 #radio1:active ~ .bullets .bullet1:hover,
