@@ -86,7 +86,7 @@ body {
 
 }
 
-.wrapper {
+.container {
   width: 650px;
   margin: 10% auto;
   display: flex;
@@ -98,72 +98,73 @@ body {
 	display: none;
 }
 
-.slider-img {
+.container-image {
   width: 100%;
   height: 650px;
   overflow: hidden;
+  border-radius: 3%;
 }
 
-.slider-wrapper {
+.image-block {
   display: flex;
   width: 600%;
   transition: all .7s;
 }
 
-.img {
+.image {
   width: 100%;
   height: 650px;
 
 }
 
-#radio1:checked ~ .slider-img .slider-wrapper {
+#radio1:checked ~ .container-image .image-block {
   margin-left: 0;
 }
-#radio2:checked ~ .slider-img .slider-wrapper {
+#radio2:checked ~ .container-image .image-block {
   margin-left: -100%;
 }
-#radio3:checked ~ .slider-img .slider-wrapper {
+#radio3:checked ~ .container-image .image-block {
   margin-left: -200%;
 }
-#radio4:checked ~ .slider-img .slider-wrapper {
+#radio4:checked ~ .container-image .image-block {
   margin-left: -300%;
 }
-#radio5:checked ~ .slider-img .slider-wrapper {
+#radio5:checked ~ .container-image .image-block {
   margin-left: -400%;
 }
-#radio6:checked ~ .slider-img .slider-wrapper {
+#radio6:checked ~ .container-image .image-block {
   margin-left: -500%;
 }
 
 
-.slider-text {
+.container-text {
   width: 300px;
   height: 50px;
   overflow: hidden;
 }
 
-.text-wrapper {
+.text-block {
   width: 600%;
   display: flex;
   transition: all .5s;
 }
 
-#radio1:checked ~ .slider-text .text-wrapper {
+#radio1:checked ~ .container-text .text-block {
   margin-left: 0;
 }
-#radio2:checked ~ .slider-text .text-wrapper {
+#radio2:checked ~ .container-text .text-block {
   margin-left: -100%;
 }
-#radio3:checked ~ .slider-text .text-wrapper {
+#radio3:checked ~ .container-text .text-block {
   margin-left: -200%;
 }
-#radio4:checked ~ .slider-text .text-wrapper {
+#radio4:checked ~ .container-text .text-block {
   margin-left: -300%;
 }
-#radio5:checked ~ .slider-text .text-wrapper {
+#radio5:checked ~ .container-text .text-block {
   margin-left: -400%;
 }
-#radio6:checked ~ .slider-text .text-wrapper {
+#radio6:checked ~ .container-text .text-block {
   margin-left: -500%;
 }
 
@@ -192,8 +193,8 @@ label {
   cursor: pointer;
 }
 
-.bullet {
 
+.bullet {
   display: block;
   width: 15px;
   height: 10px;
@@ -234,16 +235,16 @@ background-color: rgb(133, 143, 233);
 }
 
 @media (max-width: 768px) {
-  .wrapper {
+  .container {
     width: 500px;
     margin: 10% auto;
   }
 
-  .slider-img {
+  .container-image {
     height: 500px;
   }
 
-  .img {
+  .image {
     width: 500px;
     height: 500px;
   }
@@ -254,17 +255,17 @@ background-color: rgb(133, 143, 233);
 }
 
 @media (max-width: 560px) {
-  .wrapper {
+  .container {
     width: 400px;
     margin: 10% auto;
     justify-content: center;
   }
 
-  .slider-img {
+  .container-image {
     height: 400px;
   }
 
-  .img {
+  .image {
     width: 400px;
     height: 400px;
   }
@@ -273,7 +274,7 @@ background-color: rgb(133, 143, 233);
     height: 400px;
   }
 
-  .slider-text {
+  .container-text {
     order: 2;
     width: 100%;
   }
@@ -288,16 +289,16 @@ background-color: rgb(133, 143, 233);
 }
 
 @media (max-width: 420px) {
-  .wrapper {
+  .container {
     width: 300px;
     margin: 20% auto;
   }
 
-  .slider-img {
+  .container-image {
     height: 300px;
   }
 
-  .img {
+  .image {
     width: 300px;
     height: 300px;
   }
